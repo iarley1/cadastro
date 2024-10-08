@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #212521; color: #ffffff;">
+    <section class="container"></section>
+        <div class="text-center">
+            <h2>Cadastro de produtos</h2>
+        </div>
+        <div>
+            <form action="" onsubmit="submitForm()">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input required onblur="inputValidate(this)" class="form-control" type="text" name="nome" id="nome" placeholder="Nome do produto">
+                </div>
+                <div>
+                    <label for="valor">Preço</label>
+                    <input required onblur="inputValidate(this)" class="form-control" type="number" name="valor" id="valor" placeholder="Preço do produto">
+                </div>
+                <div>
+                    <label for="quantidade">Quantidade</label>
+                    <input required onblur="inputValidate(this)" type="number" class="form-control" id="quantidade" name="quantidade" placeholder="Quantidade do produto">
+                </div>
+                <div>
+                    <label for="imagem">Imagem</label>
+                    <input required onblur="inputValidate(this)" class="form-control" type="text" name="imagem" id="imagem" placeholder="Imagem do produto">
+                </div>
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        <table class="table table-dark table-stripped mt-4" >
+            <thead id="thead">
+                <tr>
+                    <th>#ID</th>
+                    <th>#PRODUTO</th>
+                    <th>#VALOR</th>
+                    <th>#QUANTIDADE</th>
+                    <th>#IMAGEM</th>
+                    <th>#AÇÕES</th>
+                </tr>
+                <tbody id="contentTable">
+                    
+                </tbody>
+            </thead>
+        </table>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
